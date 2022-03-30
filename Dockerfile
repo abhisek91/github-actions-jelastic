@@ -20,7 +20,7 @@ USER docker
 # Enable Pipefail
 SHELL ["/bin/sh", "-o", "pipefail", "-c"]
 # Install Jelastic CLI
-RUN curl -s ftp://ftp.jelastic.com/pub/cli/jelastic-cli-installer.sh | bash
+RUN curl -s ftp://ftp.jelastic.com/pub/cli/jelastic-cli-installer.sh | sh
 # Copy entrypoint
 COPY entrypoint.sh /cli/entrypoint.sh
 COPY entrypoint-github.sh /cli/entrypoint-github.sh

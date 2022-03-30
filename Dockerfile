@@ -18,7 +18,7 @@ WORKDIR /cli
 # Changing user
 USER docker
 # Enable Pipefail
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+SHELL ["/bin/sh", "-o", "pipefail", "-c"]
 # Install Jelastic CLI
 RUN curl -s ftp://ftp.jelastic.com/pub/cli/jelastic-cli-installer.sh | bash
 # Copy entrypoint

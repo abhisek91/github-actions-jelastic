@@ -1,4 +1,4 @@
-FROM openjdk:17-alpine
+FROM openjdk:17
 # Labels
 LABEL maintainer="lamsal.av@gmail.com"
 # Install Bash, cURL and clean up APK
